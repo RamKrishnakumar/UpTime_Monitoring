@@ -12,10 +12,19 @@ var fs = require('fs'); // fs is file system module
 var _data = require('./lib/data');
 var handlers = require('./lib/handlers');
 const helpers = require('./lib/helpers');
+const sendSms = require('./lib/twilio');
 
 
 //Testing
 // @TODO  delete this 
+
+//Using function inside helpers
+// helpers.sendTwilioSms('995814272','Hello! thanks for sharing.',(err)=>{
+//     console.log('this was the error',err);
+// });
+
+//Using twilio.js lib
+// sendSms('9958154272','Hello this is you verification code 129078');  
 
 // _data.create('test','newFile',{'name':'ramKrishna'}, (err)=>{
 //     console.log('this was the error ', err);
