@@ -1,7 +1,7 @@
 /**
- * Primary File for the API
- * index.js that works dynamically
- */
+* Primary File for the API
+* index.js that works dynamically
+*/
 
 //Dependencies
 var server = require('./lib/server');
